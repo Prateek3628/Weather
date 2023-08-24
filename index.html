@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Select City</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="my-4 text-center">Weather of <span id="cityname"></span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Temperature</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">Temperature : <small class="text-body-secondary fw-light"><span id="temp"></span></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <!-- <li>Temperature : <span id = "temp"></span></li> -->
+                      <li>Min Temperature is : <span id = "min_temp"></span></li>
+                      <li>Max Temperature is : <span id = "max_temp"></span></li>
+
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Cloud</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">Cloud PCT :<small class="text-body-secondary fw-light"><span id="cloud_pct"></span></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <!-- <li>Cloud_pct is <span id = "cloud_pct"></span></li> -->
+                        <li>Feels Like <span id = "feels_like"></span></li>
+                        <li>Humidity is <span id = "humidity"></span></li>
+
+
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Wind</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">Wind Speed : <small class="text-body-secondary fw-light"><span id="wind_speed"></span></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <!-- <li>Wind degree is <span id = "WIND_DEGREES"></span></li> -->
+                        <!-- <li>Wind speed is <span id = "wind_speed"></span></li> -->
+                        <li>Sunrise time is <span id = "sunrise"></span></li>
+                        <li>Sunset time is <span id = "sunset"></span></li>
+                         
+
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </main>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
